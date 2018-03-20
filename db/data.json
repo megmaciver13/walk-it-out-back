@@ -16,12 +16,11 @@
         "age": "0.25",
         "frequency": "3x/day",
         "imageUrl": "https://images.unsplash.com/photo-1447684808650-354ae64db5b8?ixlib=rb-0.3.5&s=7c54f21912fad3f0b3fee333a4a3a240&auto=format&fit=crop&w=1347&q=80"
+    },
+    {
+        "name": "Petunia",
+        "age": "2",
+        "frequency": "2x/day",
+        "imageUrl": "https://images.unsplash.com/photo-1505044197374-4d4ae3f9d566?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=af3dab3922f397a5fde45b3145a0cbdb&auto=format&fit=crop&w=668&q=80"
     }
 ]
-
-// {
-//     "name": "Petunia",
-//     "age": "2",
-//     "frequency": "2x/day",
-//     "imageUrl": "https://images.unsplash.com/photo-1505044197374-4d4ae3f9d566?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=af3dab3922f397a5fde45b3145a0cbdb&auto=format&fit=crop&w=668&q=80"
-// }
