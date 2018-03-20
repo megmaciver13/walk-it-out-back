@@ -1,11 +1,12 @@
 var passport = require('passport')
-
 var passportJWT = require('passport-jwt')
 var ExtractJwt = passportJWT.ExtractJwt
 var Strategy = passportJWT.Strategy 
 
-var users = require('./users')
 var config = require('./config')
+
+const mongoose = require('../models/User')
+const User = mongoose.model('User')
 
 var params = {  
     secretOrKey: config.jwtSecret,
@@ -14,8 +15,7 @@ var params = {
 
 module.exports = function() {  
     var strategy = new Strategy(params, (payload, callback) => {
-        var user = users[payload.id] || null
-        // ^^ change to User.findById
+        var user = User.findById(payload.id) || null
         if (user) {
             return callback(null, {
                 id: user.id
